@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/app.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section class="container1">
+        <div class="container1-background"></div>
+        <span>
+            <div class="container1-form">
+                <div class="container1__div-header">
+                    <h1 class="container1__div-header__titulo">Cadastro</h1>
+                    <h2 class="container1__div-header__subtitulo">Complete com suas informacoes</h2>
+                </div>
+                <form class="container1__formulario">
+                    <div class="container1__formulario__div-infos formulario-div">
+                        <div id="nome">
+                            <label for="nome" class="container1__formulario__div-infos__label-titulo">Nome</label>
+                            <input required type="text" name="nome" id="input-form"
+                                class="container1__formulario__div-infos__input" placeholder="Digite seu nome">
+                            <span class="span-error" id="spanError"></span>
+                        </div>
+
+                        <div id="email">
+                            <label for="email" class="container1__formulario__div-infos__label-titulo">Email</label>
+                            <input required type="email" name="email" id="input-form"
+                                class="container1__formulario__div-infos__input" placeholder="Digite seu email"
+                                minlength="10">
+                            <span class="span-error" id="spanError"></span>
+                        </div>
+
+                        <div id="cpf">
+                            <label for="cpf" class="container1__formulario__div-infos__label-titulo">Cpf</label>
+                            <input required type="text" name="cpf" class="container1__formulario__div-infos__input"
+                                placeholder="Digite seu cpf" id="input-form" minlength="11" maxlength="14"
+                                pattern="\d{3}.?\d{3}.?\d{3}-?\d{2}">
+                            <span class="span-error" id="spanError"></span>
+                        </div>
+                    </div>
+
+                    <div class="container1__formulario__div-nascimento formulario-div" id="nascimento">
+                        <label for="nascimento" class="container1__formulario__div-nascimento__label-areas">Insira sua
+                            data de nascimento</label>
+                        <input required type="date" name="nascimento" id="input-form"
+                            class="container1__formulario__div-nascimento__input-nascimento">
+                        <span class="span-error" id="spanError"></span>
+                    </div>
+
+                    <div class="container1__formulario__div-areas formulario-div" id="areas">
+                        <label class="container1__formulario__div-areas__label-titulo">De qual lado da aplicacao voce
+                            desenvolve?</label>
+
+                        <div>
+                            <label for="areas" class="container1__formulario__div-areas__area">
+                                <input required id="input-form" type="radio"
+                                    class="container1__formulario__div-areas__input" name="areas" value="front-end">
+                                Front-end
+                            </label>
+                            <label for="areas" class="container1__formulario__div-areas__area">
+                                <input required id="input-form" type="radio"
+                                    class="container1__formulario__div-areas__input" name="areas" value="back-end">
+                                Back-end
+                            </label>
+                            <label for="areas" class="container1__formulario__div-areas__area">
+                                <input required id="input-form" type="radio"
+                                    class="container1__formulario__div-areas__input" name="areas" value="fullstack">
+                                Fullstack
+                            </label>
+                        </div>
+
+                        <span class="span-error" id="spanError"></span>
+                    </div>
+
+                    <div class="container1__formulario__div-senhoridade formulario-div" id="senhoridade">
+                        <label for="senhoridade"
+                            class="container1__formulario__div-senhoridade__label-senhoridade">Selecione uma das opcoes
+                            abaixo</label>
+
+                        <select required id="input-form" class="container1__formulario__div-senhoridade__select"
+                            name="senhoridade">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+
+                        <span class="span-error" id="spanError"></span>
+                    </div>
+                    <div class="container1__formulario__submit formulario-div">
+                        <input required type="submit" class="container1__formulario__submit__btn-submit">
+                    </div>
+                </form>
+            </div>
+        </span>
+    </section>
+
+</html>
