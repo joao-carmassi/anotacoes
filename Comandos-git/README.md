@@ -55,7 +55,15 @@ git switch <nome-da-branch>  # Muda para a branch especificada.
 ```
 
 ```bash
+git switch -c <nome-da-branch>  # Cria e muda para a branch especificada.
+```
+
+```bash
 git merge <nome-da-branch>  # Funde a branch especificada na branch atual.
+```
+
+```bash
+git merge --squash <nome-da-branch>  # Funde a branch especificada na branch atual sem historico de commits.
 ```
 
 ```bash
@@ -77,7 +85,7 @@ git push -u origin main  # Envia os commits locais para o repositório remoto (m
 ```
 
 ```bash
-git pull  # Puxa e mescla alterações do repositório remoto para o repositório local.
+git pull --rebase # Puxa e mescla alterações do repositório remoto para o repositório local.
 ```
 
 ## Logs e Histórico
@@ -132,6 +140,21 @@ git stash clear  # Limpa todas as entradas de stash.
 
 ```bash
 git stash push -m "nome da stash"  # Guarda mudanças temporárias com uma mensagem associada.
+```
+
+## Worktree
+
+```bash
+git worktree add ../<nome-da-pasta> <nome-da-branch> # Cria uma nova pasta e faz o checkout automático para a branch 
+
+```
+
+```bash
+git worktree remove ../feature-x # Remove a worktree sem deletar a branch
+```
+
+```bash
+git worktree list # Listar todas as worktrees ativas
 ```
 
 ## Tags
