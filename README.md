@@ -1,6 +1,6 @@
-# Funções
+# Anotacoes
 
-Este repositório contém uma coleção de exploradores de funções em JavaScript, incluindo:
+Este repositório contém uma coleção de codigos em JavaScript e git incluindo:
 
 - Exemplos de código para Git
 - Um modelo de formulário em HTML, CSS e JS
