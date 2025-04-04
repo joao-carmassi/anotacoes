@@ -1,0 +1,1 @@
+Google ANALYTICS + Tag Manager > Search Console > Indexação
