@@ -1,1 +1,1 @@
-Google ANALYTICS + Tag Manager > SITEMAP > Search Console > Indexação
+Google ANALYTICS + Tag Manager > SITEMAP > Search Console
